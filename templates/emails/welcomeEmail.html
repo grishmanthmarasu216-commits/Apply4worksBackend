@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f5; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .header { background-color: #2563eb; padding: 30px; text-align: center; color: #ffffff; }
+    .header h1 { margin: 0; font-size: 24px; font-weight: 700; }
+    .content { padding: 40px 30px; color: #374151; line-height: 1.6; }
+    .content h2 { color: #111827; font-size: 20px; margin-top: 0; }
+    .button-container { text-align: center; margin-top: 30px; }
+    .button { display: inline-block; background-color: #10b981; color: #ffffff !important; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 16px; }
+    .footer { background-color: #f9fafb; padding: 20px; text-align: center; font-size: 13px; color: #6b7280; border-top: 1px solid #e5e7eb; }
+    .highlight-box { background-color: #f0fdf4; border: 2px solid #10b981; padding: 25px; border-radius: 8px; margin: 20px 0; position: relative; }
+    .badge { position: absolute; top: -12px; right: 20px; background-color: #10b981; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+    .secondary-box { background-color: #f3f4f6; border: 1px solid #d1d5db; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center; color: #6b7280; font-size: 14px; }
+    .feature-list { padding-left: 20px; margin-bottom: 20px; }
+    .feature-list li { margin-bottom: 8px; }
+    .price { font-size: 24px; font-weight: bold; color: #111827; margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Apply4Works</h1>
+    </div>
+    <div class="content">
+      <h2>Welcome aboard, {{firstName}}!</h2>
+      <p>We are thrilled to have you join our career growth platform. Your journey to landing your dream job just got a whole lot easier.</p>
+      
+      <div class="highlight-box">
+        <span class="badge">Most Popular Current Plan</span>
+        <h3 style="margin-top:0; color: #111827; font-size: 22px;">BASIC PLAN</h3>
+        <div class="price">$9.99/mo</div>
+        <p>Start accelerating your career today with our most recommended plan. Get immediate access to all these essential tools:</p>
+        <ul class="feature-list">
+          <li><strong>Daily Curated Jobs:</strong> Discover opportunities matched to your skills.</li>
+          <li><strong>Smart Job Matching:</strong> Let our AI find the best fits for you.</li>
+          <li><strong>Resume Builder:</strong> Create professional resumes effortlessly.</li>
+          <li><strong>ATS Resume Optimization:</strong> Ensure your resume passes automated screenings.</li>
+          <li><strong>One Click Apply:</strong> Save time applying to multiple jobs.</li>
+          <li><strong>Application Tracking:</strong> Keep all your applications organized in one place.</li>
+          <li><strong>Personalized Recommendations:</strong> Get tailored advice for your career path.</li>
+        </ul>
+        <div class="button-container" style="margin-top: 20px;">
+          <a href="{{upgradeUrl}}" class="button">Upgrade to Basic Plan</a>
+        </div>
+      </div>
+
+      <div class="button-container" style="margin-top: 15px; margin-bottom: 30px;">
+          <a href="{{dashboardUrl}}" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Or Start Exploring Jobs for Free</a>
+      </div>
+
+      <div class="highlight-box" style="border-color: #8b5cf6; background-color: #f5f3ff;">
+        <span class="badge" style="background-color: #8b5cf6;">Premium</span>
+        <h3 style="margin-top:0; color: #111827; font-size: 22px;">PRO PLAN</h3>
+        <div class="price">$19.99/mo</div>
+        <p>Unlock the ultimate career growth toolkit with all basic features plus:</p>
+        <ul class="feature-list">
+          <li><strong>AI Resume Builder & Parsing:</strong> Extract, build, and optimize with AI.</li>
+          <li><strong>LinkedIn Growth Studio Pro:</strong> Direct publishing, drafting, and smart scheduling.</li>
+          <li><strong>Knowledge Hub:</strong> AI Interview Prep, DSA Roadmaps, and HR Guides.</li>
+          <li><strong>ATS & Resume Optimization:</strong> Premium templates, AI Cover Letters, URL context.</li>
+          <li><strong>Advanced Features:</strong> Priority support, content generation, and future premium updates.</li>
+        </ul>
+        <div class="button-container" style="margin-top: 20px;">
+          <a href="{{upgradeUrl}}" class="button" style="background-color: #8b5cf6;">Upgrade to Pro Plan</a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="footer">
+      <p>Apply4Works — Empowering Your Career Growth</p>
+      <p>If you have any questions, reply to this email or contact support.</p>
+    </div>
+  </div>
+</body>
+</html>

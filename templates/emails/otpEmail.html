@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f5; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .header { background-color: #2563eb; padding: 30px; text-align: center; color: #ffffff; }
+    .header h1 { margin: 0; font-size: 24px; font-weight: 700; }
+    .content { padding: 40px 30px; color: #374151; line-height: 1.6; }
+    .content h2 { color: #111827; font-size: 20px; margin-top: 0; }
+    .footer { background-color: #f9fafb; padding: 20px; text-align: center; font-size: 13px; color: #6b7280; border-top: 1px solid #e5e7eb; }
+    .highlight-box { background-color: #f0fdf4; border: 1px solid #bbf7d0; padding: 20px; border-radius: 8px; margin: 20px 0; }
+    .code-display { font-size: 32px; font-weight: bold; letter-spacing: 4px; text-align: center; color: #111827; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Apply4Works</h1>
+    </div>
+    <div class="content">
+      <h2>Verify Your Account</h2>
+      <p>Please use the verification code below to securely log into your Apply4Works account.</p>
+      <div class="highlight-box code-display">
+        {{code}}
+      </div>
+      <p><strong>Note:</strong> This code is valid for 10 minutes. For your security, do not share this code with anyone.</p>
+    </div>
+    <div class="footer">
+      <p>Apply4Works — Empowering Your Career Growth</p>
+      <p>If you have any questions, reply to this email or contact support.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f5; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .header { background-color: #2563eb; padding: 30px; text-align: center; color: #ffffff; }
+    .header h1 { margin: 0; font-size: 24px; font-weight: 700; }
+    .content { padding: 40px 30px; color: #374151; line-height: 1.6; }
+    .content h2 { color: #111827; font-size: 20px; margin-top: 0; }
+    .button-container { text-align: center; margin-top: 30px; }
+    .button { display: inline-block; background-color: #10b981; color: #ffffff !important; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 16px; }
+    .footer { background-color: #f9fafb; padding: 20px; text-align: center; font-size: 13px; color: #6b7280; border-top: 1px solid #e5e7eb; }
+    .highlight-box { background-color: #f0fdf4; border: 1px solid #bbf7d0; padding: 20px; border-radius: 8px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Apply4Works</h1>
+    </div>
+    <div class="content">
+      <h2>Thank you for your purchase!</h2>
+      <p>Hi {{firstName}}, your payment was successfully processed and your subscription is now active.</p>
+      <div class="highlight-box">
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 8px;"><strong>Plan:</strong> {{planName}}</li>
+          <li style="margin-bottom: 8px;"><strong>Amount Paid:</strong> ${{amount}}</li>
+          <li style="margin-bottom: 8px;"><strong>Start Date:</strong> {{startDate}}</li>
+          <li style="margin-bottom: 8px;"><strong>Expiry Date:</strong> {{expiryDate}}</li>
+          <li><strong>Transaction ID:</strong> {{transactionId}}</li>
+        </ul>
+      </div>
+      <p>You now have full access to your premium features. Happy job hunting!</p>
+      <div class="button-container">
+        <a href="{{ctaUrl}}" class="button">Go to Dashboard</a>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Apply4Works — Empowering Your Career Growth</p>
+      <p>If you have any questions, reply to this email or contact support.</p>
+    </div>
+  </div>
+</body>
+</html>
